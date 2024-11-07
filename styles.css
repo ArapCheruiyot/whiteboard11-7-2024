@@ -1,0 +1,187 @@
+/* Basic styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(white 1px, transparent 1px), 
+                      linear-gradient(90deg, white 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 20px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-image: url("https://th.bing.com/th/id/OIP.Hlg2Sa5i4RvYI1La_cWlugHaE8?w=282&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7") 30 round;
+}
+
+#app-container {
+    width: 35%;
+    max-width: 800px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+/* Style for the GIF */
+#gif {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+}
+
+#buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.right-buttons {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.outer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 20%;
+    left: calc(34% + 30px);
+    transform: translateY(-50%);
+}
+
+button {
+    padding: 10px;
+}
+
+#main-content {
+    display: flex;
+    height: 100%;
+}
+
+#file-names {
+    width: 200px;
+    border-right: 1px solid black;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#file-names div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#file-names div:hover {
+    background-color: #ddd;
+}
+
+#typing-area {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 10px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: transparent;
+}
+
+#typing-area textarea {
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    color: blue;
+}
+
+/* Styles for iframes */
+.iframe-container {
+    position: absolute;
+    display: none;
+    border: 1px solid #ccc;
+    z-index: 100; /* Ensure it is above other elements */
+}
+
+.styled-but {
+    position: absolute;
+    top: 430px;
+    left: 237px;
+    width: 243px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.yellow-notepad {
+    position: absolute;
+    top: 270px;
+    left: 480px;
+    width: 285px;
+    height: 260px;
+    background-color: yellow;
+    border: 1px solid #333;
+    border-radius: 1px;
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: black; 
+    display: ;
+}
+
+.use-space {
+    position: absolute; /* Allows control of the position */
+    top: 20px; /* Adjust this value as needed */
+    left: 700px; /* Adjust this to position the div */
+    height: 700px; /* Specify units for height */
+    width: 600px; /* Specify units for width */
+    border: 1px solid #333;
+    font-size: 18px;
+    padding: 10px; /* Adds inner spacing for text */
+    box-sizing: border-box; /* Ensures border is included in width/height */
+}
+
+
+.moving-text {
+    position: relative; /* Allows movement within the container */
+    animation: moveText 3s linear infinite; /* Adjust duration and timing as needed */
+    font-size: 30px; /* Optional: adjust the size for emphasis */
+}
+
+@keyframes moveText {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 500px; /* Moves the text to the right */
+    }
+    100% {
+        left: 0; /* Returns the text to its original position */
+    }
+}

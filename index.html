@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="use-space"><h1 class ="moving-text">THIS SAPACE IS YOURS</h1>
+<p class ="moving-para ">Bring your imagination to life and share your best ideas here! Every thought, big or small, has the power to shape something extraordinary. Together, we’ll transform our ideas into action, making this site not only a reflection of our creativity but a place that truly serves and inspires us all. Let’s build something amazing, one idea at a time!</p>
+</div>
+    <div id="app-container">
+        <img id="gif" src="http://zeus.cooltext.com/images/54b/54b22ead83a8361d0214d68473954ffe955d0647.gif" alt="Decorative GIF">
+        
+        <div id="buttons">
+            <button id="new-file">New</button>
+            <button id="search">Search</button>
+            <button id="delete">Delete</button>
+            <input type="text" id="search-input" placeholder="Type to search..." style="display: none;">
+        </div>
+
+        <div id="main-content">
+            <div id="file-names">
+                <!-- File titles will be added here -->
+            </div>
+            <div id="typing-area">
+                <textarea id="text-input" placeholder="Start typing..."></textarea>
+            </div>
+        </div>
+
+        <!-- Iframe containers -->
+        <div id="iframe-prorate" class="iframe-container" style="top: 10%; left: 510px; width: 285px; height: 500px;">
+            <iframe src="https://arapcheruiyot.github.io/proratacal/" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div id="iframe-offers" class="iframe-container" style="top: 10%; left: 510px; width: 350px; height: 500px;">
+            <iframe src="https://arapcheruiyot.github.io/offer-finder/" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div id="iframe-clarity" class="iframe-container" style="top: 10%; left: 40px; width: 2000px; height: 900px;">
+            <iframe src="https://clarityafrica.multichoice.co.za/KomodoUI.UI" width=2000px height=900px frameborder="0"></iframe>
+        </div>
+        <div id="iframe-genesys" class="iframe-container" style="top: 10%; left: 40px; width: 1000px; height: 1000px;">
+            <iframe src="https://login.mypurecloud.com/#/authenticate" width=1000px height=1000px frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="outer-buttons">
+        <button id="button1">Prorate Customer BILL</button>
+        <button id="button2">Offers Filter</button>
+        <button id="button3">Clarity</button>
+        <button id="button4">Genesys</button>
+        <button id="button5">Yellow pad</button>
+    </div>
+ <div class="yellow-notepad">
+    
+        <textarea placeholder="Date" style="width: 100%; height: 80%; border: none; background-color: yellow;"></textarea>
+        <button style="left: 15;">Delete</button>
+   
+    </div>
+
+    <button class="styled-but">Remember This Interactions?</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
